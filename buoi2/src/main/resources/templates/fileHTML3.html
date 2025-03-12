@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>xin chào</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>CheckAge</th>
+    </tr>
+    <tr th:each="i:${users}">
+        <td th:text="${i.getID()}"></td>
+        <td th:text="${i.getName()}"></td>
+        <td th:text="${i.getAge()}"></td>
+        <td th:if="${i.getAge()%2==0}">tuổi chẵn</td>
+        <td th:unless="${i.getAge()%2==0}">tuổi lẻ</td>
+    </tr>
+
+
+
+
+</table>
+</body>
+</html>

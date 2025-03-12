@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!-- Xác định version (HTML5 - mới nhất - 2014) -->
+<html lang="vi"> <!-- Khai báo ngôn ngữ -->
+
+<head> <!-- Meta: thông tin của trang web -->
+    <meta charset="UTF-8"> <!-- Xác định ngôn ngữ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Giúp hiển thị tốt trên mọi thiết bị - common -->
+    <title>Document 222</title> <!-- Tiêu đề của trang web -->
+</head>
+
+<body> <!-- Code các nội dung html hiển thị -->
+    <!-- 
+        <html>: Thẻ to nhất, xác định đây là content html
+        <head>: Thẻ chứa các thông tin meta của web
+        <body>: Chứa các nội dung hiển thị ra web
+        <h1>-<h6>: Tiêu đề (Heading), đã tạo theo 1 tiêu chuẩn nào đó
+        <hr>: Kẻ 1 line ngang màn hình
+        <p>: Thẻ để chứa các đoạn văn bản bên trong (Paragraph)
+        <a>: Thẻ liên kết (Anchor)
+            href="Đường link": Đường link mở sau khi click vào
+            target="": Đây là xác định đường link được mở như thế nào
+        <br/>: Thẻ dùng để xuống dòng
+        <img>: Hiển thị ảnh (Image)
+            src: Đây là địa chỉ link ảnh
+            alt: Mô tả ảnh, cần thiết khi ảnh không tồn tại nó sẽ hiển thị mô tả này
+                1 chấm (./) là truy xuất cùng cấp
+                2 chấm (../) là truy xuất lên cấp cha
+        <ul>: Là view danh sách list
+            Style: 
+                list-style: 
+                    disc: Hình tròn đen mặc định
+                    circle: Hình tròn rỗng
+                    square: Hình vuông
+                    none: Không có gì
+        <ol>: Là view danh sách list dưới dạng order (Thêm số vào trước)
+        <li>: Là các item trong ul và ol
+        <table>: Định nghĩa ra table
+            Thuộc tính:
+                border: độ rộng của line bao bọc
+            <tr>: (Table row) xác định là một hàng trong table
+                <th>: (Table header) xác định đây là một ô header (in đậm, căn giữa)
+                <td>: (Table data) xác định đây là một ô dữ liệu trong table
+                    rowspan: Gộp số dòng lại
+                    colspan: Gộp số cột lại
+            <thead>: Đây là định nghĩa 1 đoạn code bên trong làm header của table
+            <tbody>: Đây là định nghĩa 1 đoạn code bên trong làm body của table
+            <tfoot>: Đây là định nghĩa 1 đoạn code bên trong làm footer của table
+    -->
+    <h1>tiêu đề 1</h1>
+    <h2>tiêu đề 2</h2>
+    <h3>tiêu đề 3</h3>
+    <h4>tiêu đề 4</h4>
+    <h5>tiêu đề 5</h5>
+    <h6>tiêu đề 6</h6>
+
+    <hr style="background-color:red;height: 3px;">
+
+    <p> đây là nội dung text</p>
+
+    <a href="https://google.com">đây là link google</a> <br />
+    <a href="https://google.com" target="_blank">đây là link google mở sang tab khác</a> <br />
+    <a href="https://google.com" target="_parent">đây là link google _parent</a> <br />
+    <a href="https://google.com" target="_self">đây là link google seft</a> <br />
+    <a href="https://google.com" target="_top">đây là link google mở _top</a> <br />
+
+    <hr style="background-color:red;height: 3px;">
+
+    <img src="https://suckhoedoisong.qltns.mediacdn.vn/zoom/600_315/324455921873985536/2023/1/16/meo-viet-nam-3-16738793213361484673220.jpg"
+        alt="đây là hình con mèo">
+    <hr style="background-color:red;height: 3px;">
+
+    <ul>
+        <li>nội dung 1</li>
+        <li>nội dung 2</li>
+        <li>nội dung 3</li>
+    </ul>
+
+    <ul style="list-style: square;">
+        <li>nội dung 1</li>
+        <li>nội dung 2</li>
+        <li>nội dung 3</li>
+    </ul>
+
+    <ol>
+        <li>nội dung 1</li>
+        <li>nội dung 2</li>
+        <li>nội dung 3</li>
+    </ol>
+
+    <hr style="background-color:red;height: 3px;">
+
+    <table border="3" style="border-color: aqua;">
+        <tr>
+            <th>nội dung 1</th>
+            <th>nội dung 2</th>
+            <th>nội dung 3</th>
+            <th>nội dung 4</th>
+            <th>nội dung 5</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">xin chào 1</td>
+            <td>xin chào 2</td>
+            <td>xin chào 3</td>
+            <th colspan="2">xin chào 4</th>
+        </tr>
+
+        <tr>
+            <td bgcolor="#dxa550">xin chào 2</td>
+            <td>xin chào 3</td>
+            <td bgcolor="red">xin chào 4</td>
+            <th>xin chào 5</th>
+        </tr>
+    </table>
+
+    <hr style="background-color:red;height: 3px;">
+
+    <table border="3" style="border-color: aqua;">
+       
+        <thead>
+            <tr>
+                <th>nội dung 1</th>
+                <th>nội dung 2</th>
+                <th>nội dung 3</th>
+                <th>nội dung 4</th>
+                <th>nội dung 5</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">xin chào 1</td>
+                <td>xin chào 2</td>
+                <td>xin chào 3</td>
+                <th colspan="2">xin chào 4</th>
+            </tr>
+    
+            <tr>
+                <td bgcolor="#dxa550">xin chào 2</td>
+                <td>xin chào 3</td>
+                <td bgcolor="red">xin chào 4</td>
+                <th>xin chào 5</th>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="5">đây là footer</th>
+            </tr>
+        </tfoot>
+       
+    </table>
+
+
+</body>
+
+</html>
