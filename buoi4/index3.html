@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Form và input validation cơ bản.
+            disabled: Dùng để vô hiệu hóa nhập của thẻ input
+            readonly: Giống với disable nhưng vẫn hiển thị style giống được nhập
+            minlength: Số ký tự tối thiểu phải nhập
+            maxlength: Số ký tự tối đa phải nhập
+            min: Giá trị tối thiểu (number)
+            max: Giá trị tối đa (number)
+            required: Dùng để bắt buộc người dùng phải nhập dữ liệu
+            pattern: kết hợp với regex để validate dữ liệu
+        type:
+            email: Dùng để bắt định dạng email (trong chuỗi phải có @) - sử dụng js để validate được nhiều hơn
+            file: Dùng để chọn file ở máy tính
+                multiple: Dùng để chọn nhiều file 1 lúc
+        novalidate: Vô hiệu xóa validate của form
+    -->
+
+    <form>
+
+        <label for="ID">ID 1</label>
+        <input type="text" disabled value="ID001"><br>
+
+        <label for="ID">ID 2</label>
+        <input type="text" readonly value="ID002"><br>
+
+        <label for="username">username</label>
+        <input type="text" id="username" placeholder="nhập username" minlength="6" maxlength="16" required><br>
+
+        <label for="password">password</label>
+        <input type="password" id="password" minlength="6" maxlength="20" required><br>
+
+        <label for="age">số tuổi</label>
+        <input type="number" min="18" max="100"><br>
+
+        <label for="avatar">ảnh đại diện</label>
+        <input type="file" id="avatar" multiple><br>
+        <button>submit</button>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1. Các thẻ mở rộng: 
+            <div>: Thẻ khối (block level) chiếm toàn bộ chiều ngang của màn hình. Sử dụng chủ yếu để nhóm các phần tử lại với nhau, chia layout
+            <span>: Inline block, thẻ này không chiếm toàn bộ chiều ngang của màn hình, mà sẽ theo độ rộng của phần tử bên trong nó
+            <form>: Dùng để tạo form cho người dùng input từ màn hình
+                <label>: Sử dụng để gắn nhãn cho thẻ input
+                    for: Value là id của thẻ input (optional), khi click sẽ focus vào id của thẻ input tương ứng
+                <input>: Sử dụng để tạo các field nhập liệu
+                    type: default là text
+                        password: để nhập password
+                        number: để nhập số
+                        date: Để nhập ngày
+                        checkbox: Để tích giá trị
+                        radio: Lựa chọn
+                    placeholder: Dùng để hiển thị gợi ý trong ô input
+                <select>: Dùng để cho người dùng chọn lựa nhiều lựa chọn
+                    <option>: Đây là thẻ dùng để view các option
+                        selected: Đặt mặc định 1 giá trị nào đó
+                        value: Đây là giá trị khi lựa chọn 1 option nào đó (Thường sẽ là id của record trong database)
+                <textarea>: Là thẻ dùng để input nhiều dòng dữ liệu trên 1 field
+                    cols: Init giá trị số cột cho nó
+                    rows: Init giá trị số dòng cho nó
+                <button>: Sử dụng để hiển nút bấm trên màn hình (Xử lý action)
+
+        2. Cách tổ chức nội dung với HTML5: 
+            <header>:
+            <nav>: 
+            <section>:
+            <article>:
+            <aside>:
+            <footer>:
+
+        3. Form và input validation cơ bản.
+
+    
+    
+    -->
+
+
+
+
+
+
+
+
+    <div>đây là div 1</div> 
+    <div>đây là div 2</div>
+    <div>đây là div 3</div>
+    <hr>
+    <span>span 1</span> 
+    <span>span 2</span>
+    <span>span 3</span>
+    <hr>
+    <form >
+        <label for="username" >nhập username:</label>
+        <input type="text" placeholder="nhập username" id="username">
+        <br>
+        
+        <label for="pass">nhập password</label>
+        <input type="password" >
+        <br>
+
+        
+        <label for="language">chọn ngôn ngữ</label>
+        <select  id="language" >
+            <option value="1">java</option>
+            <option value="2">php</option>
+            <option value="3" selected>python</option>
+        </select>
+        <br>
+
+        <label for="note">nhập ghi chú</label>
+        <textarea id="note" placeholder="nhập note"></textarea>
+        <br>
+
+        <input type="date"><input type="checkbox"><input type="radio">
+        <br>
+        
+        <button>submit</button>
+    </form>
+
+</body>
+</html>

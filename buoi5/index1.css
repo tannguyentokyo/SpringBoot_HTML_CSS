@@ -1,0 +1,69 @@
+/* css cho CLASS */
+.p2{
+    color: yellow;
+}
+
+
+/* css cho ID */
+#p1{
+    color: brown;
+}
+
+
+.p5{
+    color: blueviolet;
+    font-size: 30px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+
+.p6{
+    border: 2px red solid;
+    background-image: url(meme.jpg);  /* css chỉ nhận file jpg  */
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* bình thường thẻ p sẽ ăn 1 dòng, nhưng chỉnh display = inline nên chỉ ăn 1 đoạn text và viết dính được */
+.p7{
+    display: inline;
+}
+
+/* bị ẩn */
+.p8{
+    display: none;
+}
+
+.p9{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 800;  /* độ đậm của chữ */
+    text-align: center;
+}
+
+
+/* dấu phẩy (,) chỉ 2 class cùng cấp, cùng style */
+.p10,.p11{
+    background-color: orange;
+}
+
+/* viết ko có dấu sẽ là quan hệ cha con, thẻ con bên trong sẽ ăn theo style của cha gần nhất */
+.div1 p{
+    color: red;
+}
+
+/* thẻ p ở đây sẽ ăn theo style thẻ cha gần nhất là div2 (dù div2 ở trong div1) */
+.div1 .div2 p{
+    color: yellow;
+}

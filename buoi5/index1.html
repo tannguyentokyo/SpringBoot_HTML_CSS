@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue;
+        }
+        .p3 {
+            color:green ;
+        }
+        
+    </style>
+
+    <link rel="stylesheet" href="index1.css">
+    <!-- style của css này thì cái nào viết sau thì nhận css đó -->
+</head>
+<body>
+    <!-- 
+        CSS: Cascading Style Sheet: Là ngôn ngữ dùng để định dạng giao diện cho các phần tử HTML, giúp kiểm soát cách hiển thị của website như màu sắc, font chữ, khoảng cách, hiệu ứng...
+
+        - CSS có 3 loại (3 nơi định nghĩa css):
+            + (1) Inline css: Định nghĩa css tại thẻ html (nằm trong file .html)
+                - Ưu điểm: Dễ dùng, dễ sử dụng với chỉnh sửa nhỏ
+                - Nhược điểm: Code khó bảo trì, code bị lặp đi lặp lại nhiều lần
+            + (2) Internal css: Định nghĩa css trong file html
+                - Ưu điểm: QUản lý tốt hơn với inline
+                - Nhược điểm: Code dài, khó tái sử dụng hơn inline
+            + (2) External css: Định nghĩa css tại file .css và import vào html
+                - Ưu điểm: Tái sử dụng tốt, dễ bảo trì
+                - Nhược điểm: Cần kết nối file khi biên dịch
+
+        - Định danh cho thẻ html
+            id: Là duy nhất, không nên trùng lặp tên id
+                - Nếu các thẻ có style duy nhất thì có thể sử dung id
+            class: Là một tên class, có thể sử dụng cho nhiều thẻ html (mục đích để gán các style giống nhau cho thẻ)
+                - Nếu các thẻ có chung style thì nên sử dung class để style nó
+   
+        - Style group
+
+        - Các style cơ bản
+            + margin: Là khoảng cách bên ngoài (Cách các phần tử khác so với chính nó)
+                margin: top-bottom left-right (2 đối số)
+                margin: top right bottom left (4 đối số)
+                margin-top:
+                margin-right:
+                margin-bottom:
+                margin-left:
+        
+            + padding: Là khoảng cách bên trong
+                padding: top-bottom left-right (2 đối số)
+                padding: top right bottom left (4 đối số)
+                padding-top:
+                padding-right:
+                padding-bottom:
+                padding-left:
+
+            + display:
+                inline: Sẽ style cho thẻ về loại inline có width phụ thuộc vào chiều rộng của phần tử bên trong (span)
+                block: Sẽ style cho thẻ về loại block có width toàn màn hình
+                none: Ẩn phần tử trên màn hình
+
+            + font:
+                font-size: Định nghĩa font size cho 1 thẻ
+                font-family: Định nghĩa font cho 1 thẻ
+                font-weight: ĐỊnh nghĩa độ đậm của 1 thẻ
+            text-align: 
+
+
+    -->
+
+    <p style="color: red;">đây là Inline css</p>
+    <p>đây là Internal css ko có class</p>
+    <p class="p2">đây là Internal css</p>
+    <p class="p3">đây là External css</p>
+    <hr>
+
+    <p id="p1">nội dung 1</p>
+    <p class="p5">nội dung 2</p>
+    <div class="p6"><p style="color: red;">123456</p></div>
+    <p class="p7">nội dung 4</p>
+    <p class="p7">nội dung 5</p>
+    <p class="p8">nội dung 6</p>
+    <p class="p9">nội dung 9</p><hr>
+
+
+    <p class="p10">p10</p>
+    <p class="p11">p11</p><hr>
+
+    <div class="div1">
+        <p>div 1</p>
+        <div class="div2">
+            <p>div 2</p>
+            <div class="div3">
+                <p>div 3</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
