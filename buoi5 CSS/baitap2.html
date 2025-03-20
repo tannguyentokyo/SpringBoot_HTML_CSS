@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 40%;
+            padding-left: 15px;
+            padding-bottom: 20px;
+            border:black 1px solid;
+            border-radius: 5px;
+            background-color: whitesmoke;
+        }
+
+        .item {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 class="item">Đặt hàng sản phẩm</h2>
+
+        <form class="item">
+            <label for="name">Họ tên: </label><br>
+            <input type="text" id="name" style="width: 350px;" required placeholder="họ tên khách hàng"><br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" style="width: 350px;" required placeholder="email"><br>
+
+            <label for="item">Sản phẩm: </label><br>
+            <select id="item" required style="width: 200px;">
+                <option value="item1" selected>Áo thun</option>
+                <option value="item2">Giày thể thao</option>
+                <option value="item3">Balo</option>
+            </select><br>
+
+            <label for="note">Ghi chú: </label><br>
+            <textarea id="note" style="width: 350px;"></textarea><br>
+
+            <button style="background-color: dodgerblue;width:350px;border-radius: 5px;">Gửi đơn hàng</button>
+        </form>
+    </div>
+</body>
+
+</html>
