@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-rows: 100px 200px 150px 500px; */
+            grid-gap: 20px;
+        }
+        .item{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: orange;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- - grid: layout dạng lưới
+                display: grid: Chia layout dạng grid
+                grid-template-columns: repeat(3, 1fr): Tạo 3 cột với chiều rộng bằng nhau
+                grid-gap: 20px: Khoảng cách giữa các phẩn tử bằng cấp -->
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+</html>

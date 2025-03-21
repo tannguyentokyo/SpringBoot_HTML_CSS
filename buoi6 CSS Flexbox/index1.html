@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* justify: độ chính xác
+        content: nội dung 
+        align: căn chỉnh
+        item: các mục nhỏ */
+        .boxto1{
+            width: 500px;
+            height: 300px;
+            border: red 1px solid;
+            margin-right: 300px;
+            display: flex;
+         
+            justify-content: space-evenly; /* làm cho ô vào giữa chiều ngang */
+            align-items: center;   /*  làm cho ô vào giữa chiều dọc */
+            flex-direction: row; /* xác định cái item bên trong xếp theo hàng hay cột */
+           
+
+        }
+
+        .boxto2{
+            width: 500px;
+            height: 300px;
+            border: red 1px solid;
+            margin-right: 300px;
+            display: flex;
+           
+            flex-wrap: wrap;   /* tự động xuống dòng nếu content quá dài */
+
+        }
+        .boxto3{
+            width: 500px;
+            height: 300px;
+            border: red 1px solid;
+            margin-right: 300px;
+            display: flex;
+            
+            justify-content:space-between; /* cách đều các ô */
+        }
+        .box{
+            color: black;
+            width: 100px;
+            height: 50px;
+            display: flex;
+           justify-content: center;  /* làm cho chữ vào giữa chiều ngang */
+           align-items: center;   /* làm cho chữ vào giữa chiều dọc */
+        }
+        .boxnho1{
+            border: 1px blue solid;
+            background-color: blue;
+        }
+        .boxnho2{
+            border: 1px blue solid;
+            background-color:green;
+        }
+        .boxnho3{
+            border: 1px blue solid;
+            background-color: red;
+        }
+        .boxnho4{
+            border: 1px blue solid;
+            background-color: violet;
+        }
+        .boxnho5{
+            border: 1px blue solid;
+            background-color: black;
+        }
+        .boxnho6{
+            border: 1px blue solid;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. CSS Layout & Flexbox: 
+            - Css layout: Các style dùng để css cho trang web
+            - Flexbox: Là một công cụ để thực hiện chia layout
+        2. Box Model: padding, margin, border.
+
+        3. Display: block, inline, inline-block, flex, grid.
+            - block: Chiếm toàn bộ chiều rộng của container, kéo dài xuống dòng mới
+            - inline: Chiều rộng chiếm đủ nội dung bên trong
+            - inline-block: Giống block
+            - flex: Chia, căn chỉnh layout trong 1 container
+                + Muốn chia layout của các đối tượng bên trong thì tìm class cha
+                flex-direction:
+                    row: chia các item bên trong theo chiều ngang (default)
+                    row-reverse: chia các item bên trong theo chiều ngang - đảo ngược lại
+                    column: chia các item bên trong theo chiều dọc
+                    column-reverse: chia các item bên trong theo chiều dọc - đảo ngược lại
+                justify-content:
+                    space-between: Chia đều khoảng cách giữa các phần tử và cho vào giữa và sát 2 lề
+                    center: Đặt các phần tử vào trung tâm
+                    start: Đặt các phần tử về vị trí bắt đầu (left->right) (top-bottom)
+                    end: Đặt các phần tử về vị trí cuối (left->right) (top-bottom)
+                    space-around: Chia đều khoảng cách giữa các phần tử
+                    space-evenly: Chia đều khoảng cách giữa các phần tử và cho vào giữa
+                align-items:
+                    center: Đưa các phần tử vào giữa container
+                    start: Đưa các phần tử vào trí start của container
+                    end: Đưa các phần tử vào trí end của container
+                flex-wrap: wrap
+                    Dùng để đẩy các element nếu thừa chiều rộng xuống dưới
+            - grid: layout dạng lưới
+        4. Positioning: static, relative, absolute, fixed, sticky.
+    
+
+
+    
+    
+    -->
+
+    <section>
+        <div class="boxto boxto1">
+            <div class="box boxnho1">1</div>
+            <div class="box boxnho2">2</div>
+            <div class="box boxnho3">3</div>
+        </div>
+
+        <div class="boxto boxto2">
+            <div class="box boxnho1">1</div>
+            <div class="box boxnho2">2</div>
+            <div class="box boxnho3">3</div>
+            <div class="box boxnho4">4</div>
+            <div class="box boxnho5">5</div>
+            <div class="box boxnho6">6</div>
+            <div class="box boxnho6">7</div>
+            <div class="box boxnho6">8</div>
+        </div>
+
+        <div class="boxto boxto3">
+            <div class="box boxnho1">1</div>
+            <div class="box boxnho2">2</div>
+            <div class="box boxnho3">3</div>
+        </div>
+    </section>
+</body>
+</html>

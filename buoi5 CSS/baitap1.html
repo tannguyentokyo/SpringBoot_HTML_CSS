@@ -17,6 +17,15 @@
         body {
             text-align: center;
         }
+
+        .div {      
+            display: flex;
+            justify-content: center;
+        }
+     
+        .div2{
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -26,19 +35,25 @@
     </header>
 
     <section>
-        <section>
-            <img style="border-radius:50%;" src="https://i.pinimg.com/564x/24/21/85/242185eaef43192fc3f9646932fe3b46.jpg" alt="avatar">
+        <section class="section sec1">
+            <img style="border-radius:50%;"
+                src="https://i.pinimg.com/564x/24/21/85/242185eaef43192fc3f9646932fe3b46.jpg" alt="avatar">
             <p>Tôi là 1 người đam mê công nghệ và yêu thích lập trình web</p>
         </section>
 
-        <section>
-            <h2>Sở thích:</h2>
+        <section class="section sec2">
+            <div class="div div1">
+                <h2>Sở thích:</h2>
+            </div>
 
+            <div class="div div2">
+               
                 <ul>
-                    <li >Đọc sách</li>
+                    <li>Đọc sách</li>
                     <li>Viết code</li>
                     <li>Chơi thể thao</li>
-                </ul>          
+                </ul>
+            </div>
         </section>
     </section>
 </body>
