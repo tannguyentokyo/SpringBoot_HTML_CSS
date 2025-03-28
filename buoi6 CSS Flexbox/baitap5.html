@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
-            background-color: #181A1B;
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        header{
+
+        header {
             margin: 30px;
+            padding: 15px;
         }
-        img{
-            background-color: #181A1B;
+
+        img {
             width: 20px;
             height: 20px;
         }
-        label{
-            height: 40px;
+
+        label {
             border: 1px solid;
             border-radius: 40px;
             padding: 15px;
             margin: 10px;
-            
+            font-family: Arial, Helvetica, sans-serif;
         }
-        input{
+
+        input {
             width: 600px;
             height: 40px;
-            background-color: black;
+            border: 0;
+            border-bottom: 1px solid;
+            margin: 15px;
+            margin-left: 20px;
         }
-        .container{
-            margin-left: 200px;
+
+        .container {
             margin-right: 200px;
-            text-align: left;
+            margin-left: 200px;
         }
-        .header{
-            border: 0 solid;
-            border-radius: 10px;
-            background-color: #1F4247;
-            padding: 5px;
-        }
-        .sec-item{
+
+        .sec-item {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
-        .sec{
+
+        .sec {
             margin: 10px;
-            border: px solid;
-            background-color: #1B1D1E;
+            border: 0 solid;
+            background-color: #F8F9FD;
             padding: 15px;
             border-radius: 20px;
         }
+
+        .header {
+            border: 0 solid;
+            border-radius: 10px;
+            background-color: #B5E7F1;
+            padding: 5px;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <section class="sec search">
-           
-        </section>
-
-        <section class="sec">
+        <section>
             <form>
                 <label id="search">
-                   <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXK-SKLQiI7jkCRv3vC7zA3Qvc1sTG6zRIA&s" alt="search"></span> 
+                    <span><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXK-SKLQiI7jkCRv3vC7zA3Qvc1sTG6zRIA&s"
+                            alt="search"></span>
                     <span>Lọc theo danh mục</span>
                 </label>
 
-                <input type="text" id="search" placeholder="Tìm kiếm danh mục" >
+                <input type="text" id="search" placeholder="Tìm kiếm danh mục">
             </form>
         </section>
     </header>
@@ -91,61 +100,67 @@
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Viễn thông</h2>
-                    <p>Chuyển đổi từ nhà cung cấp kết nối sang nhà cung cấp dịch vụ kỹ thuật số và định hình lại trải nghiệm khách hàng</p>
+                    <p>Chuyển đổi từ nhà cung cấp kết nối sang nhà cung cấp dịch vụ kỹ thuật số và định hình lại trải
+                        nghiệm khách hàng</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Chăm sóc sức khỏe và khoa học đời sống</h2>
-                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ liệu chưa từng có</p>
+                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
+                        liệu chưa từng có</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
-                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ liệu chưa từng có</p>
+                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
+                        liệu chưa từng có</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
-                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ liệu chưa từng có</p>
+                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
+                        liệu chưa từng có</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
-                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ liệu chưa từng có</p>
+                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
+                        liệu chưa từng có</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
-                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ liệu chưa từng có</p>
+                    <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
+                        liệu chưa từng có</p>
                     <a href="">→</a>
                 </div>
             </section>
-    
+
             <section class="sec">
                 <div>
                     <span class="header">Ngành</span>
@@ -155,7 +170,8 @@
                 </div>
             </section>
         </section>
-       
+
     </section>
 </body>
+
 </html>
