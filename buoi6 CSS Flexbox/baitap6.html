@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #F6F6F6;
+        }
+
+        header {
+            text-align: center;
+            background-color: #F0F0F0;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .container {
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 15%;
+            margin-right: 15%;
+
+        }
+
+        .sec-hi {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .sec-hi-welcome p  {
+            padding: 10px ;
+            
+        }
+        .sec-hi h2 {
+            color: #FF1493;
+            padding: 10px;
+        }
+
+        .sec-hi img {
+            border-radius: 50%;
+        }
+
+        .sec-hi div {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .top {
+            color: #DAA520;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 90%;
+
+        }
+
+        .top h1 {
+            border-bottom: 5px solid;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sec-all {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .sec {
+            border: 1px solid #008080;
+            border-left: 8px solid #008080;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 40%;
+            height: 250px;
+        }
+        .sec h3{
+            background: linear-gradient(to right,#009789,#00BBD3);
+            padding: 5px;
+            margin: 10px 5px;
+        }
+        .sec form{
+            margin-top: 20px;
+        }
+        button {
+            border: 0 solid;
+            border-radius: 5px;
+            background-color: #FFA500;
+            padding: 5px;
+        }
+
+        .sec span {
+            background-color: #008080;
+            padding: 10px;
+            border: 0 solid;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            
+        }
+        footer button{
+            border: 0px solid;
+            border-radius: 20px;
+            padding:20px 30px;
+            margin: 30px;
+            background: linear-gradient(to right,#FFA308,#FF69B1);
+            color: white;
+        }
+
+        .footer-sec {
+            background-color: #1E293B;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .footer-sec h3{
+            padding: 5px;
+            background: linear-gradient(to right,#FFA401,#FF6CAC);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .footer-sec p{
+            padding: 5px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgaF5ppTqU8jy7sW4muHG_3tGhKeMTNrB5g&s"
+                alt="avt">
+            <h1>theAdhocrary</h1>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Articles</a>
+                <a href="">Journal</a>
+                <a href="">Notes</a>
+                <a href="">Reviews</a>
+                <a href="">Search</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="container">
+
+        <section class="sec-hi">
+            <div>
+                <img src="https://cdn.kona-blue.com/upload/kona-blue_com/post/images/2024/09/18/459/anh-avatar-fb-5.jpg"
+                    alt="avt">
+            </div>
+            <div class="sec-hi-welcome">
+                <h2>oh hi!</h2>
+                <p>I'm afraid you've stumbled into the personal playground of Murray Champernowne</p>
+                <p>Ad hoc throughts from an ad hoc mind!</p>
+            </div>
+        </section>
+
+        <section class="top">
+            <div>
+                <h1>What I'm up to</h1>
+            </div>
+        </section>
+
+        <section class="sec-all">
+            <section class="sec">
+                <div>
+                    <h3>2024: The year of Friends</h3>
+                    <p>A look back over 2024, a year dominated by travel and friends...</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="sec">
+                <div>
+                    <h3>Providing CSS Fallbacks with Chakara UI</h3>
+                    <p>Chakra UI is a solid base, but CSS post-processing lacks modern fallbacks</p>
+                    <form>
+                        <button class="read-btn">📖 Read Article</button>
+                        <span class="date">📅 21 Feb 25</span>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+    <footer>
+        <section>
+            <form>
+                <button><b>EXPLORE?</b></button>
+            </form>
+        </section>
+
+        <section class="footer-sec">
+            <section>
+                <h3>Made by Me, But Made Possible By:</h3>
+                <p>Craft CMS, Gatsby, Github, Netlify</p>
+            </section>
+
+            <section>
+                <h3>Connect with me:</h3>
+                <p>Instagram, GitHub, BlueSky...</p>
+            </section>
+
+            <section>
+                <h3>Keep up to date:</h3>
+                <p>RSS: All Posts, Articles, Notes</p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>

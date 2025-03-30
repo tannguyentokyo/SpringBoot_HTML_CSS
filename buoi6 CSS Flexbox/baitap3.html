@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+        }
         body {
-            background-color: darkgrey;
+            background-color: #F4F4F4;
             display: flex;
             flex-direction: column;
             align-items: center;
+            line-height: 1.6;
         }
 
         .container {
             margin-top: 10px;
             border: 0 solid;
             border-radius: 5px;
-            background-color: black;
+            background-color: white;
             display: flex;
             flex-direction: column;
 
@@ -27,16 +31,33 @@
             border-radius: 50%;
             width: 50px;
             height: 50px;
+            padding-right: 15px;
         }
 
         .sec {
             margin-left: 10px;
             margin-right: 10px;
             padding: 10px;
-            display: flex;
+            
             border-bottom: 1px solid #555
         }
-
+        .sec-div{
+            display: flex;
+            align-items: center;
+        }
+        .sec-content{
+            margin-left: 65px;
+        }
+        .sec-span{
+            display: flex;
+            width: 150px;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .sec-span span{
+            cursor: pointer;
+        }
         .sec div {
             padding: 5px;
 
@@ -60,17 +81,19 @@
 <body>
     <section class="container">
         <section class="sec">
-            <div>
+            <div class="sec-div">
                 <img src="https://i.pinimg.com/474x/79/d3/1e/79d31e406fe3d3d7322b18666184911d.jpg" alt="avt">
-            </div>
-            <div>
                 <h2>Bị Bông Ông Nội</h2>
+            </div>
+
+            <div class="sec-content">
+                
                 <p>ABCHKHJKHFIJHDSJFHKJHSDKJF</p>
                 <p>33 tuần</p>
-                <div>
-                    <a href="">Thích</a>
-                    <span>.</span>
-                    <a href="">Phản hồi</a>
+                <div class="sec-span">
+                    <span style="color: blue;">Thích</span>
+                    <p>.</p>
+                    <span style="color: blue;">Phản hồi</span>
                 </div>
             </div>
 

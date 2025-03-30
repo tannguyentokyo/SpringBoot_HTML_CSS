@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+        }
         body {
             margin: 0;
             display: flex;
@@ -22,14 +25,20 @@
         img {
             width: 20px;
             height: 20px;
+            margin-right: 10px;
         }
+        form{
+            display: flex;
 
+        }
         label {
             border: 1px solid;
             border-radius: 40px;
             padding: 15px;
             margin: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
         }
 
         input {
@@ -42,8 +51,8 @@
         }
 
         .container {
-            margin-right: 200px;
-            margin-left: 200px;
+            margin-right: 300px;
+            margin-left: 300px;
         }
 
         .sec-item {
@@ -51,12 +60,14 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
-        .sec {
+        .sec .sec-div {
             margin: 10px;
             border: 0 solid;
             background-color: #F8F9FD;
             padding: 15px;
             border-radius: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         .header {
@@ -64,6 +75,8 @@
             border-radius: 10px;
             background-color: #B5E7F1;
             padding: 5px;
+            background: linear-gradient(to right, #b2ebf2, #d1c4e9);
+
         }
     </style>
 </head>
@@ -73,9 +86,8 @@
         <section>
             <form>
                 <label id="search">
-                    <span><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXK-SKLQiI7jkCRv3vC7zA3Qvc1sTG6zRIA&s"
-                            alt="search"></span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXK-SKLQiI7jkCRv3vC7zA3Qvc1sTG6zRIA&s"
+                        alt="search">
                     <span>Lọc theo danh mục</span>
                 </label>
 
@@ -93,8 +105,8 @@
 
         <section class="sec-item">
             <section class="sec">
-                <div>
-                    <span class="header">Ngành</span>
+                <div class="sec-div">
+                    <p><span class="header">Ngành</span></p>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Định hình lại doanh nghiệp của bạn và hỗ trợ bảo mật và tuân thủ trên quy mô lớn</p>
                     <a href="">→</a>
@@ -102,7 +114,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Viễn thông</h2>
                     <p>Chuyển đổi từ nhà cung cấp kết nối sang nhà cung cấp dịch vụ kỹ thuật số và định hình lại trải
@@ -112,7 +124,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Chăm sóc sức khỏe và khoa học đời sống</h2>
                     <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
@@ -122,7 +134,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
@@ -132,7 +144,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
@@ -142,7 +154,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
@@ -152,7 +164,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Đổi mới nhanh hơn cho bác sĩ lâm sàng và bệnh nhân với độ tin cậy, bảo mật và quyền riêng tư dữ
@@ -162,7 +174,7 @@
             </section>
 
             <section class="sec">
-                <div>
+                <div class="sec-div">
                     <span class="header">Ngành</span>
                     <h2>Dịch vụ tài chính</h2>
                     <p>Định hình lại doanh nghiệp của bạn và hỗ trợ bảo mật và tuân thủ trên quy mô lớn</p>
