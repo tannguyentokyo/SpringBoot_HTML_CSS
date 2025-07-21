@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box{
+        margin: 100px;
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        transition:  1s linear;
+      }
+      .box:hover{
+        
+        background-color: green;
+        /* transform: rotate(45deg); */
+        /* transform: scale(1.5); */
+        /* transform:skew(10deg,20deg) ; */
+        /* transform: translate(100px,-100px); */
+        transform: rotate(45deg) scale(1.5) translate(50px,50px)
+      }
+    </style>
+</head>
+<body>
+    <!-- 
+        hover: Đây là một sự kiện khi trỏ chuột vào sẽ thay đổi html của 1 class
+        transition: Cho phép mình áp dụng thay ddooir hiệu ứng một các mượt mà hơn
+            ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+            linear - specifies a transition effect with the same speed from start to end
+            ease-in - specifies a transition effect with a slow start
+            ease-out - specifies a transition effect with a slow end
+            ease-in-out - specifies a transition effect with a slow start and end
+        transform: function(value)
+            function: 
+                rotate(deg): Quay phần tử theo độ (0->360)
+                scale(number): Thu/phóng phần tử (gấp bao nhiêu lần)
+                skew(x deg,y deg): Nghiêng phần tử theo trục
+                translate(x px,y px): Dịch chuyển phẩn tử
+    -->
+            
+
+    <div class="box">
+        1
+    </div>
+    
+</body>
+</html>

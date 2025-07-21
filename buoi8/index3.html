@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+        }
+
+        .p1::first-letter {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .p1::first-line {
+            color: red;
+        }
+
+        .p2::before {
+            content: "Xin chào.";
+        }
+
+        .p2::after {
+            content: ".end";
+        }
+
+        .p1:hover::before {
+            content: "👉";
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+       
+
+        /* odd: dòng lẻ */
+        .div3 p:nth-child(odd){
+            color: green;
+        }
+
+        /* even: dòng chẵn */
+        .div3 p:nth-child(even){
+            color: blue;
+        }
+
+        /* chọn số dòng muốn thay đổi CSS */
+        .div3 p:nth-child(2){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="p1">Đây là thẻ P</p>
+        <p class="p2"> đây là thẻ P 2</p>
+    </div>
+
+    <div>
+        <input type="text" placeholder="here">
+      
+    </div>
+
+    <div class="div3">
+        <p>thẻ p 1</p>
+        <p>thẻ p 2</p>
+        <p>thẻ p 3</p>
+        <p>thẻ p 4</p>
+    </div>
+</body>
+
+</html>

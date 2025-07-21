@@ -1,0 +1,44 @@
+1. JdbcTemplate
+- method update: Dùng cho các câu SQL làm thay đổi database (UPDATE, INSERT, DELETE)
+- method getForObject: Dùng cho câu SQL không làm thay đổi databse (SELECT)
+
+
+2. Junit 
+2.1. Các function hay dùng
+- assertNotNull(Object) ->xác định rằng object không được null, nếu null thì testcase sẽ lỗi
+- assertTrue(Object hoặc 1 câu so sánh) -> Xác định kết quả bên trong function sẽ phải ra true, nếu ra false thì test lỗi
+- assertFalse(Object hoặc 1 câu so sánh) -> Ngược lại với assertTrue
+- assertThrows: Xác định rằng hàm service sẽ sảy ra lỗi exception nào
+- when: Định nghĩa cho hàm nào hàm nào đó, lúc nào sẽ sảy ra lỗi hay return lại 1 giá trị nào mong muốn, thông thường là đi kèm với thenThrow và thenReturn
+- thenThrows: Xác định hàm khai báo ở when sẽ trả ra loại exception nào khi được gọi
+- thenReturn: Xác định hàm khai báo ở when sẽ trả về data gì
+
+
+
+3. Java core:
+3.1. Tại sao hàm phải có throw một exception:
+- Vì method gọi bên trong đang throw ra một exception. Nên hàm bên ngoài phải xử lý nó bằng cách sử dụng try catch hoặc throw tiếp.
+3.2. this là gì? Tại sao cần?
+- Là đại đại diện cho class hiện tại đang xem. Có thể dùng this để trỏ tới method hay các biến của class hiện tại. Bỏ đi thì không ảnh hưởng gì
+3.3. Annotation @Transactional(readOnly = true) là gì?
+- Xác định hàm hiện tại chỉ để select trong database, không được thực hiện insert, update, delete trong database
+3.4. Giải thích cách hoạt động của try catch?
+- Khối try sẽ thực hiện logic nhưng sẽ có bất kì lỗi gì thì sẽ đẩy xuống khối catch
+- Khối catch sẽ được thực hiện khi try sảy ra lỗi
+- finanlly là block đặc biệt, kể cả try có sảy ra lỗi hay không thì đều chạy vào cuối
+3.5. Giải thích cách khai báo logger trong service hiện tại?
+- static: để cho biến sẽ sẽ được khởi tạo khi class này được biên dịch 
+- final: để cho biến này sẽ không thể thay đổi giá trị nữa
+
+
+4. ORM Mybatis:
+- thẻ if là thẻ check điều kiện nếu đúng thì sẽ chạy và add thêm điều kiện vào SQL
+- cú pháp #{field} sẽ lấy data từ parameter truyền xuống câu SQL
+- thẻ foreach trong này là một vòng for sẽ thực hiện lặp các giá trị trên java truyền xuống
+
+
+
+5. Cách đọc hàm service:
+- Đọc xem là parameter của hàm là gì
+- Đọc xem nó sẽ return gì
+- Đọc các câu SQL trong service xem có các table nào, câu SQL của nó có table nào, nối với nhau bằng field nào => từ đó có thể hiểu được database để fake lên để lấy được data ra
